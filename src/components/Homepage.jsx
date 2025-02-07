@@ -1,4 +1,5 @@
-import { Container, Dropdown } from "react-bootstrap/";
+import { Container, Dropdown, Row } from "react-bootstrap/";
+import AreaFilm from "./AreaFilm";
 
 const Homepage = () => {
   return (
@@ -15,15 +16,23 @@ const Homepage = () => {
 
           <Dropdown.Menu>
             <Dropdown.Item href="#/action-1" active>
-              Action
+              Trending
             </Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Horror</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Romance</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Latest</Dropdown.Item>
             <Dropdown.Divider />
+            <Dropdown.Item href="#/action-3">Romance</Dropdown.Item>
             <Dropdown.Item href="#/action-4">Drama</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </div>
+
+      <Row>
+        <div>
+          <h4 className="text-light">Trending</h4>
+        </div>
+
+        <AreaFilm />
+      </Row>
     </Container>
   );
 };
