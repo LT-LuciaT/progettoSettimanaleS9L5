@@ -9,6 +9,9 @@ img.card-img-top {
   height: 250px;
   object-fit: cover;
 }
+div.film-cards {
+  justify-content: center;
+}
 .card {
   position: relative;
   width: 100%;

@@ -1,7 +1,7 @@
 import { Facebook, Instagram, TwitterX, Youtube } from "react-bootstrap-icons";
 
 const Footer = () => (
-  <div className="row justify-content-center bg-dark">
+  <div className="row justify-content-center bg-dark pt-5">
     <div className="col col-6">
       <div className="row">
         <div className="col mb-2 text-light">

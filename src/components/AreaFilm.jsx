@@ -28,7 +28,7 @@ class AreaFilm extends Component {
     const { films } = this.state;
     return (
       <div className="text-light">
-        <div className="film-cards d-flex flex-wrap">
+        <div className="film-cards d-flex flex-wrap mx-auto">
           {films.map((film, index) => (
             <Col key={index} xs={6} sm={4} md={3} lg={2} xxl={2}>
               <Card className="my-3">

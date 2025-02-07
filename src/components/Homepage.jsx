@@ -30,18 +30,18 @@ const Homepage = () => {
 
       <Row>
         <div>
-          <h4 className="text-light">Hunger Games</h4>
+          <h4 className="text-light ps-5 pt-5">Hunger Games</h4>
         </div>
 
         <AreaFilm />
         <div>
-          <h4 className="text-light">Pirati</h4>
+          <h4 className="text-light ps-5 pt-5">Pirati</h4>
         </div>
 
         <Film2 />
 
         <div>
-          <h4 className="text-light">Step Up</h4>
+          <h4 className="text-light ps-5 pt-5">Step Up</h4>
         </div>
 
         <FilmDance />
