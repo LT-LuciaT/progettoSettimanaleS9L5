@@ -1,5 +1,7 @@
 import { Container, Dropdown, Row } from "react-bootstrap/";
 import AreaFilm from "./AreaFilm";
+import Film2 from "./Film2.jsx";
+import FilmDance from "./FilmDance.jsx";
 
 const Homepage = () => {
   return (
@@ -28,10 +30,21 @@ const Homepage = () => {
 
       <Row>
         <div>
-          <h4 className="text-light">Trending</h4>
+          <h4 className="text-light">Hunger Games</h4>
         </div>
 
         <AreaFilm />
+        <div>
+          <h4 className="text-light">Pirati</h4>
+        </div>
+
+        <Film2 />
+
+        <div>
+          <h4 className="text-light">Step Up</h4>
+        </div>
+
+        <FilmDance />
       </Row>
     </Container>
   );

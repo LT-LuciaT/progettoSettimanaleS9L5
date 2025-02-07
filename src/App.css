@@ -5,7 +5,10 @@ a {
 .card {
   border-style: none;
 }
-
+img.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
 .card {
   position: relative;
   width: 100%;

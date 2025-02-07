@@ -2,13 +2,13 @@ import "../App.css";
 import { Component } from "react";
 import { Button, Card, Col } from "react-bootstrap";
 
-class AreaFilm extends Component {
+class FilmDance extends Component {
   state = {
     films: [],
   };
 
   fetchMovie = async () => {
-    const resp = await fetch("http://www.omdbapi.com/?apikey=b55e94bb&s=hunger", {
+    const resp = await fetch("http://www.omdbapi.com/?apikey=b55e94bb&s=step up", {
       method: "GET",
     });
 
@@ -49,4 +49,4 @@ class AreaFilm extends Component {
   }
 }
 
-export default AreaFilm;
+export default FilmDance;

@@ -8,7 +8,7 @@ class AreaFilm extends Component {
   };
 
   fetchMovie = async () => {
-    const resp = await fetch("http://www.omdbapi.com/?apikey=b55e94bb&s=hunger", {
+    const resp = await fetch("http://www.omdbapi.com/?apikey=b55e94bb&s=pirates", {
       method: "GET",
     });
 

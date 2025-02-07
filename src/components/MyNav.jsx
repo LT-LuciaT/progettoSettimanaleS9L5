@@ -10,7 +10,10 @@ const MyNav = () => {
   return (
     <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container fluid>
-        <Navbar.Brand href=""> NETFLIX</Navbar.Brand>
+        <Navbar.Brand href="" className="text-danger">
+          {" "}
+          NETFLIX
+        </Navbar.Brand>
         <Navbar className="gap-3">
           <Nav.Link href="#home" className="text-light">
             Home
