@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Search } from "react-bootstrap-icons";
+import { Bell } from "react-bootstrap-icons";
+import { PersonCircle } from "react-bootstrap-icons";
 
 const MyNav = () => {
   return (
@@ -32,6 +34,15 @@ const MyNav = () => {
           <Nav className="ms-auto">
             <Nav.Link href="#link" className="text-white">
               <Search />
+            </Nav.Link>
+            <Nav.Link href="#link" className="text-light">
+              KIDS
+            </Nav.Link>
+            <Nav.Link href="#link" className="text-white">
+              <Bell />
+            </Nav.Link>
+            <Nav.Link href="#link" className="text-white">
+              <PersonCircle />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
