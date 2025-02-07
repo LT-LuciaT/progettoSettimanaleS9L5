@@ -1,3 +1,4 @@
-Navbar a.nav-link {
+a {
   color: white;
+  text-decoration: none;
 }
