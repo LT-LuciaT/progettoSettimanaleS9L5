@@ -6,7 +6,7 @@ a {
   border-style: none;
 }
 img.card-img-top {
-  height: 250px;
+  height: 400px;
   object-fit: cover;
 }
 div.film-cards {

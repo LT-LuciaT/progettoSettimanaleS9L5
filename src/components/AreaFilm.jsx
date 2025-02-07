@@ -15,7 +15,7 @@ class AreaFilm extends Component {
     if (resp.ok) {
       const data = await resp.json();
       if (data.Search) {
-        this.setState({ films: data.Search.slice(0, 5) });
+        this.setState({ films: data.Search.slice(0, 6) });
       }
     }
   };
