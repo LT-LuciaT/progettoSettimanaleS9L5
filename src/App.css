@@ -2,3 +2,29 @@ a {
   color: white;
   text-decoration: none;
 }
+.card {
+  border-style: none;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-body {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+}
+.card:hover .card-body {
+  opacity: 1;
+  visibility: visible;
+}

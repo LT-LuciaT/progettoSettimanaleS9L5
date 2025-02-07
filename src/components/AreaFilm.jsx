@@ -1,5 +1,6 @@
+import "../App.css";
 import { Component } from "react";
-import { Button, Card } from "react-bootstrap";
+import { Button, Card, Col } from "react-bootstrap";
 
 class AreaFilm extends Component {
   state = {
@@ -29,16 +30,18 @@ class AreaFilm extends Component {
       <div className="text-light">
         <div className="film-cards d-flex flex-wrap">
           {films.map((film, index) => (
-            <Card key={index} style={{ width: "18rem", margin: "10px" }}>
-              <Card.Img variant="top" src={film.Poster} alt={film.Title} />
-              <Card.Body>
-                <Card.Title>{film.Title}</Card.Title>
-                <Card.Text>{film.Year}</Card.Text>
-                <Button variant="primary" href={`https://www.imdb.com/title/${film.imdbID}`} target="_blank">
-                  More Info
-                </Button>
-              </Card.Body>
-            </Card>
+            <Col key={index} xs={6} sm={4} md={3} lg={2} xxl={2}>
+              <Card>
+                <Card.Img variant="top" src={film.Poster} alt={film.Title} />
+                <Card.Body className="bg-dark bg-opacity-75">
+                  <Card.Title className="text-light">{film.Title}</Card.Title>
+                  <Card.Text className="text-light">{film.Year}</Card.Text>
+                  <Button variant="primary" href={`https://www.imdb.com/title/${film.imdbID}`} target="_blank">
+                    More Info
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
           ))}
         </div>
       </div>
