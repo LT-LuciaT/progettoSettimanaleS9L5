@@ -15,19 +15,19 @@ const MyNav = () => {
           <img src={logo} alt="Netflix Logo" style={{ height: "40px" }} />
         </Navbar.Brand>
         <Navbar className="gap-3">
-          <Nav.Link href="#home" className="text-light">
+          <Nav.Link href="#home" className="text-light d-none d-md-block">
             Home
           </Nav.Link>
-          <Nav.Link href="#link" className="text-light">
+          <Nav.Link href="#link" className="text-light d-none d-md-block">
             TV Shows
           </Nav.Link>
-          <Nav.Link href="#link" className="text-light">
+          <Nav.Link href="#link" className="text-light d-none d-md-block">
             Movies
           </Nav.Link>
-          <Nav.Link href="#link" className="text-light">
+          <Nav.Link href="#link" className="text-light d-none d-md-block">
             Recently Added
           </Nav.Link>
-          <Nav.Link href="#link" className="text-light">
+          <Nav.Link href="#link" className="text-light d-none d-md-block">
             My List
           </Nav.Link>
         </Navbar>
