@@ -1,4 +1,5 @@
 import "../App.css";
+import logo from "../assets/logo.png";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -11,8 +12,7 @@ const MyNav = () => {
     <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container fluid>
         <Navbar.Brand href="" className="text-danger">
-          {" "}
-          NETFLIX
+          <img src={logo} alt="Netflix Logo" style={{ height: "40px" }} />
         </Navbar.Brand>
         <Navbar className="gap-3">
           <Nav.Link href="#home" className="text-light">
